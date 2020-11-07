@@ -4,14 +4,17 @@ import Login from './Components/Login/Login';
 import Player from './Components/Player/Player';
 import { getTokenFromUrl } from './spotify';
 import SpotifyWebApi from 'spotify-web-api-js';
+import { useDataLayerValue } from './DataLayer';
 
 // Communication with spotify
 const spotify = new SpotifyWebApi();
 
 function App() {
 
-  // States
-  const [token, setToken] = useState(null);
+  // set Token in States
+  // const [token, setToken] = useState(null);
+
+  const [{ user, token }, dispatch] = useDataLayerValue();
 
   // Get Access Token from Loading Component
   useEffect(() => {
@@ -21,24 +24,35 @@ function App() {
     // console.log('access_token->', token);
 
     if (_token) {
-      setToken(_token);
+      // setToken(_token);
+      dispatch({
+        type: 'SET_TOKEN',
+        token: _token,
+      }) 
       spotify.setAccessToken(_token);
 
       // get user account
-      spotify.getMe().then(user => { 
-        console.log(user);
+      spotify.getMe().then((user) => { 
+
+        dispatch({
+          type: 'SET_USER',
+          user: user, // (user: user === user) in es6, same key same value, can call one time only
+        })
+
       }); 
     }
 
+    console.log(user);
+    console.log(token);
   }, []);
 
   return (
     <div className="App">
       
       { // if have token, return the PlayerComponent, else return LoginComponent
-        token ?
+        token ? 
           <Player />
-         : (
+         : (     
           <Login />
         )
       }
