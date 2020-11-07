@@ -1,0 +1,27 @@
+# Clever Programmer
+https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ
+
+# Spotify Clone
+- User Auth
+- Spotify API
+- Responsive Design
+- Material UI (icons)
+- React Context API (like redux)
+- Hooks/Effects
+- ReactJS Tech Stack
+
+# Get Started
+npm start
+
+# Dependencies
+
+# Firebase
+- Hosting
+- Analytics
+- Needs firebase cli -g
+
+# Spotify API
+https://developer.spotify.com/dashboard/
+Edit Settings
+  Redirect URIs
+  http://localhost:3000/ Remove
