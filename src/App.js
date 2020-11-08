@@ -39,6 +39,13 @@ function App() {
           user: user, // (user: user === user) in es6, same key same value, can call one time only
         })
 
+        spotify.getUserPlaylists().then((playlists) => {
+          dispatch({
+            type: 'SET_PLAYLISTS',
+            playlists: playlists,
+          })
+        })
+
       }); 
     }
 
@@ -50,7 +57,7 @@ function App() {
     <div className="App">
       
       { // if have token, return the PlayerComponent, else return LoginComponent
-        token ? 
+        token ?  
           <Player spotify={spotify} />
          : (     
           <Login />
