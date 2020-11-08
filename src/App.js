@@ -42,8 +42,8 @@ function App() {
       }); 
     }
 
-    console.log(user);
-    console.log(token);
+    // console.log(user);
+    // console.log(token);
   }, []);
 
   return (
@@ -51,7 +51,7 @@ function App() {
       
       { // if have token, return the PlayerComponent, else return LoginComponent
         token ? 
-          <Player />
+          <Player spotify={spotify} />
          : (     
           <Login />
         )
