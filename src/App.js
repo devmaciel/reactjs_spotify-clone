@@ -24,7 +24,7 @@ function App() {
     // console.log('access_token->', token);
 
     if (_token) {
-      // setToken(_token);
+      // setToken(_token); //state set
       dispatch({
         type: 'SET_TOKEN',
         token: _token,
@@ -33,20 +33,27 @@ function App() {
 
       // get user account
       spotify.getMe().then((user) => { 
-
         dispatch({
           type: 'SET_USER',
           user: user, // (user: user === user) in es6, same key same value, can call one time only
         })
-
-        spotify.getUserPlaylists().then((playlists) => {
-          dispatch({
-            type: 'SET_PLAYLISTS',
-            playlists: playlists,
-          })
-        })
-
       }); 
+
+      // get user playlist
+      spotify.getUserPlaylists().then((playlists) => {
+        dispatch({
+          type: 'SET_PLAYLISTS',
+          playlists: playlists,
+        })
+      });
+
+      spotify.getPlaylist('37i9dQZEVXcIJazRV9ISoM').then(response => {
+        dispatch({
+          type: 'SET_DISCOVER_WEEKLY',
+          discover_weekly: response,
+        })
+      })
+
     }
 
     // console.log(user);
