@@ -30,7 +30,7 @@ function Footer() {
         <SkipPreviousIcon className="footer__icon" />
         <PlayCircleOutlineIcon className="footer__icon" fontSize="large" />
         <SkipNextIcon className="footer__icon" />
-        <RepeatIcon className="footer_green" />
+        <RepeatIcon className="footer__green" />
       </div>
 
       <div className="footer__right">
