@@ -16,12 +16,12 @@ function Footer() {
       <div className="footer__left">
         <img 
           className="footer__albumLogo"
-          src="https://images-eu.ssl-images-amazon.com/images/I/5148y8%2Bu-SL._SX342_QL70_ML2_.jpg" 
+          src="https://images-fe.ssl-images-amazon.com/images/I/61BH18erRPL._AC_UL600_SR600,600_.jpg" 
           alt=""
         />
         <div className="footer__songInfo">
-          <h4>Yeah!</h4>
-          <p>Usher</p>
+          <h4>Silly-Go-Round</h4>
+          <p>FictionJunction YUUKA</p>
         </div>
       </div>
 

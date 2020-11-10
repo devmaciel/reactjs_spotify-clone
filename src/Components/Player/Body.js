@@ -19,8 +19,9 @@ function Body({ spotify }) {
         <img src={discover_weekly?.images[0].url} alt="" />
         <div className="body__infoText">
           <strong>PLAYLIST</strong>
-          <h2>Discover Weekly</h2>
-          <p>{discover_weekly?.description}</p>
+          <h2>Kuryuu Anime/Game Song's</h2>
+          <p><strong>João Pedro Maciel</strong> • 117 músicas, por volta de 7h</p>
+          {/* <p>{discover_weekly?.description}</p> */}
         </div>
       </div>
 

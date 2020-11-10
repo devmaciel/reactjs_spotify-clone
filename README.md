@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Spotify Clone (Front-End)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Começando
 
-## Available Scripts
+Simplesmente podemos iniciar com
 
-In the project directory, you can run:
+> npm start
 
-### `npm start`
+### Algumas imagens do projeto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Página Inicial
+[![](https://imgur.com/AamRxkH.png)](https://imgur.com/AamRxkH.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<br />
 
-### `npm test`
+Página de Login do Spotify (verdadeira)
+[![](https://imgur.com/rLMiJt8.png)](https://imgur.com/rLMiJt8.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br />
 
-### `npm run build`
+Página de Login
+[![](https://imgur.com/0ELgjtv.png)](https://imgur.com/0ELgjtv.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br /><br />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Tecnologias Utilizadas
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-   HTML5
+-   CSS3
+-   Javascript
+-   Firebase/Firestore
 
-### `npm run eject`
+#### Ferramentas Utilizadas
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+-   React JS <br />
+    -- material/ui-core <br />
+    -- material/ui-icons <br />
+    -- react hooks and context api
+-   Spotify API
+-   Firebase Tools
+-   VSCode
+-   GIT
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<br />
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+##### Mais sobre o projeto
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Mais um mini projeto, dessa vez utilizando a API do Spotify, para poder autenticar usuário real da spotify, assim podemos recuperar várias informações, como nome, imagem, playlists, músicas favoritas entre outros. No caso temos a página inicial, utilizando material-ui com ReactJS, o grande diferencial é o front end utilizando Display Flex e suas propriedades de maneira inteligente.
 
-## Learn More
+###### _Relato de bugs_
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+pequeno bug na rolagem da página inicial, já que o footer é fixed, fica em cima de pelo menos de alguma música na lista de música.
